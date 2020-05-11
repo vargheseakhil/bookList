@@ -1,0 +1,73 @@
+body {
+    font-family: ProximaNova, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+#root {
+    margin: 100px;
+}
+.book-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 3px;
+    background-color: white;
+    color: rgb(86, 84, 77);
+    border-radius: 0px 0px 3px 3px;
+    padding: 15px 15px 15px 25px;
+    box-shadow: rgb(187, 187, 187) 0px 1px 3px 0px;  
+}
+.book-list[data-section='false']:hover {
+    background-color: #13aa5a;
+    color: white;
+}
+.book-list[data-section='false'] .section-container {
+    display: none;
+}
+.section-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 10px;
+}
+.section-list button {
+   padding: 10px;
+   border-radius: 10px;
+   color: white;
+   min-width: 100px;
+}
+button.complete {
+    color: #666666;
+}
+button.complete::before {
+    content: '\2713';
+    display: inline-block;
+    color: red;
+    padding: 0 6px 0 0;
+}
+button.in_progress {
+    background-color: lightblue;
+    cursor: pointer;
+}
+button.not_started {
+    background-color: #13aa5a;
+    cursor: pointer;
+}
+.section-container {
+    margin-top: 15px;
+    padding-left: 0;
+}
+.progressbar {
+    background-color: lightgray;
+    border-radius: 13px; /* (height of inner div) / 2 + padding */
+    padding: 3px;
+}
+  
+.progressbar > div {
+     background-color: #13aa5a;
+     width: 0; /* Adjust with JavaScript */
+     height: 20px;
+     border-radius: 10px;
+}

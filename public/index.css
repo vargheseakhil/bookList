@@ -1,0 +1,18 @@
+body {
+    font-family: ProximaNova, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+h3 {
+    margin-top: 15%;
+}
+.view-book {
+    padding: 14px 80px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background-color: #13aa5a;
+    font-weight: bold;
+    border-radius: 35px;
+    text-decoration: none;
+}
